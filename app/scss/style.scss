@@ -30,8 +30,8 @@ body {
 	background: #fff9ee;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'ff-ernestine-web-pro', Georgia, serif;
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: 'proxima-nova', Georgia, serif;
 }
 
 .text-white				{ color: 			#ffffff; }
@@ -51,6 +51,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .bigicons {
 	font-size: 4em;
+}
+
+img.service-image {
+	display: block;
+	max-width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.bigicons.service-image {
+	font-size: 75px;
 }
 
 section {
@@ -82,7 +93,9 @@ section#intro h1 {
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  padding-top: 30px; height: 0; overflow: hidden;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
  
 .video-container iframe,
