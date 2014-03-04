@@ -13,6 +13,7 @@
 <script type="text/javascript" src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
 
 <!-- Typekit -->
 <script type="text/javascript" src="//use.typekit.net/miw7yej.js"></script>
@@ -21,51 +22,39 @@
 </head>
 <body>
 
-<section id="intro" class="back text-white">
+<section id="intro" class="pad back text-white">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<h1>Lisa&rsquo;s Cookies</h1>
-				<h2>Custom cookies made with love.</h2>
+				<h2>You dream it, I bake it.<br>Custom cookie creations.</h2>
 			</div>
 			<div class="col-sm-4 col-sm-offset-4 text-center">
 				<hr class="back-cream">
 			</div>
 			<div class="col-sm-12 text-center">
-				<h3>Westmont, Illinois</h3>
+				<h3>Chicagoland</h3>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section id="services">
+<section id="services" class="pad">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4 text-center">
-				<img class="service-image" src="/images/icon_8917.png" alt="">
-				<!--<span class="fa-stack fa-lg bigicons">
-				  <i class="fa fa-circle fa-stack-2x text-lightorange"></i>
-				  <i class="fa fa-list-ul fa-stack-1x fa-inverse"></i>
-				</span>-->
-				<h2>Cookies</h2>
+				<img class="service-image" src="/images/cookie1.png" alt="">
+				<h2>Sugar Cookies</h2>
 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
 			<div class="col-sm-4 text-center">
-				<img class="service-image" src="/images/icon_6713.png" alt="">
-				<!--<img class="service-image" src="/images/icon_23817.png" alt="">-->
-				<!--<span class="fa-stack fa-lg bigicons">
-				  <i class="fa fa-circle fa-stack-2x text-lightgreen"></i>
-				  <i class="fa fa-magic fa-stack-1x fa-inverse"></i>
-				</span>-->
-				<h2>Baking</h2>
+				<img class="service-image" src="/images/cupcake.png" alt="">
+				<h2>Cupcakes</h2>
 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
 			<div class="col-sm-4 text-center">
-				<span class="fa-stack fa-lg bigicons service-image">
-				  <i class="fa fa-circle fa-stack-2x text-lightblue"></i>
-				  <i class="fa fa-truck fa-stack-1x fa-inverse fa-flip-horizontal"></i>
-				</span>
-				<h2>Delivery</h2>
+				<img class="service-image" src="/images/oven.png" alt="">
+				<h2>Custom Baking</h2>
 				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
 		</div>
@@ -73,20 +62,35 @@
 </section>
 
 <section id="photos">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
+	<div id="cookie-photos-carousel" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#cookie-photos-carousel" data-slide-to="0" class="active"></li>
+	    <li data-target="#cookie-photos-carousel" data-slide-to="1"></li>
+			<li data-target="#cookie-photos-carousel" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div class="item active">
+	      <img src="/images/backgrounds/pastels.jpg" alt="">
+	    </div>
+			<div class="item">
+				<img src="/images/backgrounds/chc.jpg" alt="">
 			</div>
-		</div>
+			<div class="item">
+				<img src="/images/backgrounds/atm.jpg" alt="">
+			</div>
+	  </div>
+	  <a class="left carousel-control" href="#cookie-photos-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	  <a class="right carousel-control" href="#cookie-photos-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 	</div>
 </section>
 
-<section id="contact" class="text-white back-lightorange">
+<section id="contact" class="pad text-white back-lightorange">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3">
 				<h2 class="text-center">Get In Touch</h2>
-				<p class="text-center">Call (630) 917-3031, email [FINAL EMAIL ADDRESS] or enter your email below and I'll get back to you as soon as possible!</p>
+				<p class="lead text-center"><i class="fa fa-fw fa-phone left"></i>(630) 917-3031<span class="hidden-xs">&nbsp;&nbsp;&nbsp;</span><br class="visible-xs"><i class="fa fa-fw fa-envelope left"></i>[FINAL EMAIL ADDRESS]</p>
+				<p class="text-center">Or enter your name and email below and I'll get back to you as soon as possible!</p>
 				<form role="form" method="post" action="//api.formspree.com/rsefer@gmail.com">
 					<input type="hidden" name="_next" value="//lisaarndt/thanks/" />
 					<div class="form-group">
@@ -108,12 +112,27 @@
 	</div>
 </section>
 
-<footer>
+<section id="about">
+	<div class="col-md-8">
+		<div class="row">
+			<div class="pad col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0">
+				<h2>About Lisa</h2>
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</div>
+	<div id="family-pic-wrap" class="col-md-4">
+		<img src="/images/family.jpg" alt="Lisa and Family">
+	</div>
+	<div class="clearfix"></div>
+</section>
+
+<footer class="pad">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<p>To Do: Attributions</p>
-				<p>Cookies and cupcakes icons designed by Elves Sousa, Chance Smith, and Polina Flegontovna from <a href="http://thenounproject.com/">The Noun Project</a></p>
+				<div class="text-center">Icons designed by Elves Sousa, Chance Smith, Hakan Yalcin, and Polina Flegontovna from <a href="http://thenounproject.com/">The Noun Project</a></div>
 			</div>
 		</div>
 	</div>
