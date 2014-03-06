@@ -21,6 +21,17 @@
 <script type="text/javascript" src="//use.typekit.net/miw7yej.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48669833-1', 'cookiegirl.net');
+  ga('send', 'pageview');
+
+</script>
+
 </head>
 <body>
 
@@ -31,9 +42,10 @@
 				<h1>Lisa&rsquo;s Cookies</h1>
 				<h2>You dream it, I bake it.<br>Custom cookie creations.</h2>
 			</div>
-			<div class="col-sm-4 col-sm-offset-4 text-center">
+			<div class="col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3 text-center">
 				<hr class="back-cream">
 			</div>
+			<div class="clearfix"></div>
 			<div class="col-sm-12 text-center">
 				<h3>Chicagoland</h3>
 			</div>
@@ -41,23 +53,23 @@
 	</div>
 </section>
 
-<section id="services" class="pad">
+<section id="services" class="pad padbig">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4 text-center">
 				<img class="service-image" src="/images/cookie1.png" alt="">
 				<h2>Sugar Cookies</h2>
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p class="lead">Colorful, beautifully decorated, and tasty cookies themed just how you want them!</p>
 			</div>
 			<div class="col-sm-4 text-center">
 				<img class="service-image" src="/images/cupcake.png" alt="">
 				<h2>Cupcakes</h2>
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p class="lead">Fun, playful, high-quality mini-cakes perfect for special occasions.</p>
 			</div>
 			<div class="col-sm-4 text-center">
 				<img class="service-image" src="/images/oven.png" alt="">
 				<h2>Custom Baking</h2>
-				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p class="lead">Birthday cakes, artisanal bread, finger bites, and more!</p>
 			</div>
 		</div>
 	</div>
@@ -69,9 +81,17 @@
 	    <li data-target="#cookie-photos-carousel" data-slide-to="0" class="active"></li>
 	    <li data-target="#cookie-photos-carousel" data-slide-to="1"></li>
 			<li data-target="#cookie-photos-carousel" data-slide-to="2"></li>
+			<li data-target="#cookie-photos-carousel" data-slide-to="3"></li>
+			<li data-target="#cookie-photos-carousel" data-slide-to="4"></li>
 	  </ol>
 	  <div class="carousel-inner">
-	    <div class="item active">
+			<div class="item active">
+				<img src="/images/backgrounds/animals.jpg" alt="">
+			</div>
+	    <div class="item">
+				<img src="/images/backgrounds/moneybags.jpg" alt="">
+			</div>
+			<div class="item">
 	      <img src="/images/backgrounds/pastels.jpg" alt="">
 	    </div>
 			<div class="item">
@@ -86,15 +106,15 @@
 	</div>
 </section>
 
-<section id="contact" class="pad text-white back-lightorange">
+<section id="contact" class="pad padbig text-white back-lightorange">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-sm-offset-3">
 				<h2 class="text-center">Get In Touch</h2>
-				<p class="lead text-center"><i class="fa fa-fw fa-phone left"></i>(630) 917-3031<span class="hidden-xs">&nbsp;&nbsp;&nbsp;</span><br class="visible-xs"><i class="fa fa-fw fa-envelope left"></i>[FINAL EMAIL ADDRESS]</p>
+				<p class="lead text-center"><a href="tel:16309173031"><i class="fa fa-fw fa-phone left"></i>(630) 917-3031</a><span class="hidden-xs">&nbsp;&nbsp;&nbsp;</span><br class="visible-xs"><a href="mailto:lisa@cookiegirl.net" target="_blank"><i class="fa fa-fw fa-envelope left"></i>lisa@cookiegirl.net</a></p>
 				<p class="text-center">Or enter your name and email below and I'll get back to you as soon as possible!</p>
-				<form role="form" method="post" action="//api.formspree.com/rsefer@gmail.com">
-					<input type="hidden" name="_next" value="//lisaarndt/thanks/" />
+				<form role="form" method="post" action="//api.formspree.com/lisa@cookiegirl.net">
+					<input type="hidden" name="_next" value="http://cookiegirl.net/thanks/" />
 					<div class="form-group">
 						<label for="name">Name</label>
 						<input id="name" class="input-lg form-control" type="text" name="name" placeholder="Jane Smith" />

@@ -36,10 +36,10 @@ p:last-child {
   margin-bottom: 0px; }
 
 .text-white {
-  color: #ffffff; }
+  color: white; }
 
 .back-white {
-  background: #ffffff; }
+  background: white; }
 
 .text-cream {
   color: #fff9ee; }
@@ -94,10 +94,13 @@ img.service-image {
   padding-top: 2em;
   padding-bottom: 2em; }
 
+.padbig {
+  padding-top: 4em;
+  padding-bottom: 4em; }
+
 section.back {
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: 1500px auto; }
 
 .mobile section.back,
@@ -105,7 +108,7 @@ section.back {
   background-attachment: inherit; }
 
 section#intro {
-  background-image: url("/images/backgrounds/pastels.jpg");
+  background-image: url("/images/backgrounds/crosses_blurred.jpg");
   background-position: center bottom;
   background-size: cover;
   text-shadow: 0.1875em 0.1875em 0.125em rgba(0, 0, 0, 0.3); }
@@ -121,6 +124,9 @@ section#intro h1 {
 .carousel-control.right,
 .carousel-control.right:hover {
   background: none; }
+
+section#contact a {
+  color: white; }
 
 section#about #family-pic-wrap img {
   max-width: 100%;
@@ -153,5 +159,15 @@ section#about #family-pic-wrap img {
   box-shadow: none; }
 
 @media screen and (max-width: 767px) {
+  .padbig {
+    padding-top: 2em;
+    padding-bottom: 2em; }
+
   section#intro h1 {
-    font-size: 3em; } }
+    font-size: 3em; }
+
+  .carousel-indicators {
+    display: none; }
+
+  img.service-image {
+    margin-top: 2em; } }
