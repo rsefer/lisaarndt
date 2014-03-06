@@ -116,6 +116,9 @@ section#intro {
 section#intro h1 {
   font-size: 6em; }
 
+section#intro h2 {
+  margin-bottom: 0px; }
+
 #cookie-photos-carousel .item img {
   width: 100%; }
 
