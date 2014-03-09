@@ -30,9 +30,33 @@
   border-radius: 50%;
 }
 
+// Box Shadow
+@mixin box-shadow($props) {
+  -webkit-box-shadow: $props;
+  -moz-box-shadow: $props;
+  box-shadow: $props;
+}
+
 // Columns
 @mixin columns($cols) {
-	-webkit-column-count: $cols;
-	-moz-column-count: $cols;
-	column-count: $cols;
+  -webkit-column-count: $cols;
+  -moz-column-count: $cols;
+  column-count: $cols;
+}
+
+// Animations
+@mixin animation($name: fadeIn, $duration: 1s, $function: ease) {
+  -webkit-animation: $name $duration $function;
+  animation: $name $duration $function;
+}
+@mixin transition($property: all, $duration: 1s, $function: ease) {
+  -webkit-transition: $property $duration $function;
+  transition: $property $duration $function;
+}
+@mixin transform($props) {
+  -webkit-transform: $props;
+  -moz-transform: $props;
+  -ms-transform: $props;
+  -o-transform: $props;
+  transform: $props;
 }
