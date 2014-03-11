@@ -69,10 +69,12 @@ section.back {
 }
 
 section#intro {
-	background-image: url('/images/backgrounds/crosses_blurred.jpg');
-	background-position: center bottom;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	background-image: url('/images/backgrounds/anchor.jpg');
+	background-position: center center;
 	background-size: cover;
-	text-shadow: 0.1875em 0.1875em 0.125em rgba(0,0,0,0.3);
+	text-shadow: 0.1875em 0.1875em 0.0625em transparentize($black, 0.5);
 }
 
 section#intro h1 {
@@ -162,16 +164,15 @@ footer a:hover {
 @-webkit-keyframes fadeInDown {
 	0% {
 		opacity: 0;
-		transform: translateY(-20px);
+		-webkit-transform: translateY(-20px);
 	}
 
 	100% {
 		opacity: 1;
-		transform: translateY(0);
+		-webkit-transform: translateY(0);
 	}
 }
 
 .fadeInDown {
-	-webkit-animation: fadeInDown, 1s, ease-in;
-  animation: fadeInDown, 1s, ease-in;
+	@include animation(fadeInDown, 0.3s);
 }
