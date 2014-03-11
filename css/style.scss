@@ -10,6 +10,7 @@ $red: #f77a7a;
 $orange: #f7977a;
 $bluelite: #5bc0de;
 
+
 body {
 	color: $cream;
 	background: $red;
@@ -37,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 img.service-image {
 	display: block;
-	max-width: 150px;
+	max-width: 120px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
@@ -45,6 +46,10 @@ img.service-image {
 
 .bigicons.service-image {
 	font-size: 75px;
+}
+
+hr.back-cream {
+	@include box-shadow(1px 1px 1px transparentize($black, 0.2));
 }
 
 .pad {
@@ -71,10 +76,10 @@ section.back {
 section#intro {
 	padding-top: 4em;
 	padding-bottom: 4em;
-	background-image: url('/images/backgrounds/anchor.jpg');
+	background-image: url('/images/backgrounds/anchor_dark.jpg');
 	background-position: center center;
 	background-size: cover;
-	text-shadow: 0.1875em 0.1875em 0.0625em transparentize($black, 0.5);
+	text-shadow: 2px 2px 1px transparentize($black, 0.2);
 }
 
 section#intro h1 {
@@ -126,6 +131,14 @@ footer a:hover {
 
 .form-control {
 	@include box-shadow(none);
+}
+
+@media screen and (min-width: 1200px) {
+
+	img.service-image {
+		max-width: 150px;
+	}
+
 }
 
 @media screen and (max-width: 767px) {
