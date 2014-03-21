@@ -128,7 +128,8 @@ section#intro {
 section#intro h1 {
   font-size: 6em; }
 
-section#intro h2 {
+section#intro h2,
+section#intro h3 {
   margin-bottom: 0px; }
 
 section#services {
@@ -142,6 +143,9 @@ section#contact {
 
 section#contact a {
   color: white; }
+
+section#about #family-pic-wrap {
+  text-align: center; }
 
 section#about #family-pic-wrap img {
   max-width: 100%;
