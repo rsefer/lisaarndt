@@ -1,0 +1,19 @@
+{
+  "name": "lisaArndt",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Robert Sefer",
+      "email": "rsefer@gmail.com",
+      "homepage": "http://rsefer.com"
+    }
+  ],
+  "devDependencies": {
+    "grunt": "latest",
+    "time-grunt": "latest",
+    "grunt-newer": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-jshint": "latest"
+  }
+}

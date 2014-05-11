@@ -1,0 +1,18 @@
+{
+  "name": "lisaArndt",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Robert Sefer",
+      "email": "rsefer@gmail.com",
+      "homepage": "http://rsefer.com"
+    }
+  ],
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "respond": "latest",
+    "html5shiv": "latest",
+    "bootstrap": "latest",
+    "fontawesome": "latest"
+  }
+}
